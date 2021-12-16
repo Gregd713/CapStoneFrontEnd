@@ -37,7 +37,7 @@ render() {
         <div className="App">
         <SearchBar/>
         <Routes>
-            <Route path="/" component={HomePage}/>
+            <Route path="/" element={<HomePage/>}/>
             {/* <Route path="/" exact render={(props) => {
                 if(!this.state.user){
                     return <Redirect to='/login' />
