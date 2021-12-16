@@ -37,7 +37,7 @@
     position:absolute;
     display: flex;
     flex-wrap: wrap;
-    top: 30%;
+    top: 31%;
     left: 50%;
     margin-right: -50%;
     transform: translate(-50%, -50%)
@@ -53,7 +53,7 @@
     position:absolute;
     display: flex;
     flex-wrap: wrap;
-    top: 43%;
+    top: 45%;
     left: 50%;
     margin-right: -50%;
     transform: translate(-50%, -50%)

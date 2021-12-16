@@ -1,4 +1,5 @@
 import React from 'react';
+import Button from '@mui/material/Button';
 import './HomePage.css'
 
 function HomePage(props){
@@ -22,9 +23,9 @@ function HomePage(props){
             </div>
 
             <div className='route-buttons'>
-            <button  href="/login">Login</button>
-            <button  className="middle-button" href="/signup">Sign-up</button>
-            <button  href="/about">About</button>
+            <Button variant="contained" href="/login" >Login</Button>
+            <Button  variant="contained"className="middle-button" href="/signup">Sign-up</Button>
+            <Button variant="contained" href="/about">About</Button>
             </div>
         </div>
     )
