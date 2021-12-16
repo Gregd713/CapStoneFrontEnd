@@ -1,5 +1,5 @@
 import React, {Component} from "react";
-import HomePage from "./components/HomePage/HomePage"
+import HomePage from "./components/Pages/HomePage/HomePage"
 import { Routes, Route, Link } from "react-router-dom";
 import jwtDecode from 'jwt-decode'
 import SearchBar from './components/SearchBar/SearchBar'
@@ -38,6 +38,7 @@ render() {
         <SearchBar/>
         <Routes>
             <Route path="/" element={<HomePage/>}/>
+            {/* <Route path="/" element={<Login/>}/> */}
             {/* <Route path="/" exact render={(props) => {
                 if(!this.state.user){
                     return <Redirect to='/login' />

@@ -1,6 +1,6 @@
 .background-container{
     background-image: 
-    url("../images/HomePageBackground.jpg");
+    url("../Images/HomePageBackground.jpg");
     background-size:cover;
     background-repeat: no-repeat;
     background-position: relative;
@@ -37,7 +37,7 @@
     position:absolute;
     display: flex;
     flex-wrap: wrap;
-    top: 28%;
+    top: 30%;
     left: 50%;
     margin-right: -50%;
     transform: translate(-50%, -50%)
@@ -53,7 +53,7 @@
     position:absolute;
     display: flex;
     flex-wrap: wrap;
-    top: 39%;
+    top: 43%;
     left: 50%;
     margin-right: -50%;
     transform: translate(-50%, -50%)

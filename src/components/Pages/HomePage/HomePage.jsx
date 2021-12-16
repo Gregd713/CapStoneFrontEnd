@@ -14,6 +14,11 @@ function HomePage(props){
             making the transition from the military and gradually 
             into civilian life.
             </h4>
+            <h4>
+            Here, we pride ourselves on helping service members make a plan and know exactly
+            what they are to expect once they leave the service and are prepared for 
+            the world.
+            </h4>
             </div>
 
             <div className='route-buttons'>
