@@ -21,7 +21,7 @@
     position:absolute;
     display: flex;
     flex-wrap: wrap;
-    top: 10%;
+    top: 5%;
     left: 50%;
     margin-right: -50%;
     transform: translate(-50%, -50%)
@@ -37,7 +37,7 @@
     position:absolute;
     display: flex;
     flex-wrap: wrap;
-    top: 31%;
+    top: 28%;
     left: 50%;
     margin-right: -50%;
     transform: translate(-50%, -50%)
@@ -61,4 +61,63 @@
 .middle-button{
     margin-left: 16px;
     margin-right: 16px;
+}
+.army{
+    width: 400px;
+    height: 400px;
+}
+.navy{
+    width: 375px;
+    height: 375px;
+    justify-content:center;
+    text-align: left;
+    position:absolute;
+    display: flex;
+    flex-wrap: wrap;
+    top: 0%;
+    left: 80%;
+
+}
+.marines{
+    width: 350px;
+    height: 350px;
+    justify-content:center;
+    text-align: left;
+    position:absolute;
+    display: flex;
+    flex-wrap: wrap;
+    top: 45%;
+    left: 80%;
+
+}
+
+.airforce{
+    width: 450px;
+    height: 450px;
+}
+.spaceforce{
+    width: 350px;
+    height: 350px;
+    justify-content: center;
+    text-align: left;
+    position:absolute;
+    display: flex;
+    flex-wrap: wrap;
+    top: 76%;
+    left: 40%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%)
+}
+.coastguard{
+    width: 430px;
+    height: 430px;
+    justify-content: center;
+    text-align: left;
+    position:absolute;
+    display: flex;
+    flex-wrap: wrap;
+    top: 76%;
+    left: 60%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%)
 }
