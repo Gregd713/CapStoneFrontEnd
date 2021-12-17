@@ -38,7 +38,7 @@ function HomePage(props){
 
 
             <div className="title-holder">
-            <h1>GOT YOUR SIX GUIDANCE GROUP</h1>
+            <h1>DD214 Guidance Group</h1>
             <h3>Service Member to Civilian Transitional Guidance Group</h3>  
             </div>
 

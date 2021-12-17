@@ -19,9 +19,10 @@ function LoginForm(props){
     };
     let response = await axios.post(`http://localhost:5000/api/users/login`, getUser);
     if(response.status==200){
-      console.log(response.data);
+      
       localStorage.setItem('token', response.data)
       window.location = '/mainfeed';
+      console.log(response.data);
     }
   }
 
