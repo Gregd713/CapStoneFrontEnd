@@ -1,6 +1,6 @@
 import React, {Component} from "react";
 import HomePage from "./components/Pages/HomePage/HomePage"
-import { Routes, Route, Link } from "react-router-dom";
+import { Switch, Route, Link, Redirect } from "react-router-dom";
 import jwtDecode from 'jwt-decode'
 import SearchBar from './components/SearchBar/SearchBar'
 import LoginPage from './components/Pages/LoginPage/LoginPage'
@@ -38,10 +38,16 @@ render() {
     return (
         <div className="App">
         <SearchBar/>
-        <Routes>
-            <Route path="/" element={<HomePage/>}/>
-            <Route path="/login" element={<LoginPage/>}/>
-            <Route path="/mainfeed" element={<MainFeedPage/>}/>
+        <Switch>
+            <Route path="/home" component={HomePage}/> 
+            <Route path="/"exact render={(props)=>{
+                if(!this.state.user){
+                    return<Redirect to='/home'/>}
+                else{
+                        return <MainFeedPage {...props}/>
+                    }}}/>
+            <Route path="/login" component={LoginPage}/>
+            <Route path="/mainfeed" component={MainFeedPage}/>
             {/* <Route path="/" element={<Login/>}/> */}
             {/* <Route path="/" exact render={(props) => {
                 if(!this.state.user){
@@ -50,7 +56,7 @@ render() {
                     return <HomePage {...props} />
                 }
             }}/> */}
-           </Routes>
+           </Switch>
         </div>
     )
 }
