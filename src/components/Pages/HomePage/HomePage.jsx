@@ -38,19 +38,17 @@ function HomePage(props){
 
 
             <div className="title-holder">
-            <h1>AFTER SERVICE</h1>
+            <h1>GOT YOUR SIX GUIDANCE GROUP</h1>
             <h3>Service Member to Civilian Transitional Guidance Group</h3>  
             </div>
 
             <div className='intro-paragraph'>
-            <h4>Site tailored by former service members, for service members
-            making the transition from the military and gradually 
-            into civilian life.
+            <h4>Site tailored by veterans for veterans.
             </h4>
             <h4>
-            Here, we pride ourselves on helping service members make a plan and know exactly
-            what they are to expect once they complete their service and are prepared for 
-            the world.
+            Here we guide and mentor service members making the jump to life outside the 
+            military. We do this by making sure we all have each other's backs into a new frontier by connecting you 
+            with those who have already made the change.
             </h4>
             </div>
 

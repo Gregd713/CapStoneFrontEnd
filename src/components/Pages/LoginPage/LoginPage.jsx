@@ -21,7 +21,7 @@ function LoginForm(props){
     if(response.status==200){
       console.log(response.data);
       localStorage.setItem('token', response.data)
-      window.location = '/';
+      window.location = '/mainfeed';
     }
   }
 
