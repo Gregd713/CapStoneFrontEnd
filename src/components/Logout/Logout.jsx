@@ -1,5 +1,5 @@
 import * as React from 'react';
-
+import MenuItem from '@mui/material/MenuItem';
 
 export default function Logout() {
     const logOutBtn = () => {
@@ -7,5 +7,5 @@ export default function Logout() {
         window.location.assign("/"); 
     }
   return(
-      <button onClick={() => logOutBtn()}>log out </button>
+      <MenuItem onClick={() => logOutBtn()}>log out </MenuItem>
   )};
