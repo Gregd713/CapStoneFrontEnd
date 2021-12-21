@@ -27,14 +27,36 @@ function LoginForm(props){
   }
 
         return (
-          <form className="signup" onSubmit={handlesubmit}>
-            <lable>Email</lable>
-            <input value={email} onChange={(event) => getEmail(event.target.value)} type='text' />
+          <div className="login">
+          <div className="loginWrapper">
+            <div className="loginLeft">
+              <h3 className="loginLogo">LIFE 214</h3>
+              <span className="loginDesc">
+                We got your six.
+              </span>
+            </div>
+            <div className="loginRight">
+              <div className="loginBox">
+              <form className="signup" onSubmit={handlesubmit}>
+           
+            <input placeholder="Email" className="loginInput" value={email} onChange={(event) => getEmail(event.target.value)} type='text' />
     
-            <lable>Password</lable>
-            <input value={password} onChange={(event) => getPassword(event.target.value)} type='text' />          
-            <button href="/profile"type='submit'>Log in</button>
+            
+            <input placeholder="Password" className="loginInput"value={password} onChange={(event) => getPassword(event.target.value)} type='text' />          
+            <button className="loginButton"href="/mainfeed"type='submit'>Log in</button>
           </form>
+                {/* <input placeholder="Email" className="loginInput" value={email} onChange={(event) => getEmail(event.target.value)} type='text'/>
+                <input placeholder="Password" className="loginInput" value={password} onChange={(event) => getPassword(event.target.value)} type='text' />
+                <button className="loginButton"href="/mainfeed"type='submit'>Log In</button>
+                <span className="loginForgot">Forgot Password?</span>
+                <button className="loginRegisterButton">
+                  Create a New Account
+                </button> */}
+              </div>
+            </div>
+          </div>
+        </div>
+
         );
     }
     Login.propTypes={

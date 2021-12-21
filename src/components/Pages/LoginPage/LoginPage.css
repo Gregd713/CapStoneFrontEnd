@@ -1,31 +1,84 @@
-body{
-background-color: burlywood;
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: top;
-    background-attachment: fixed;
-    position: fixed;
-    opacity: .9;
+.login {
     width: 100vw;
     height: 100vh;
-}
-
-.signup{
-    background-color: rgb(190, 190, 248);
-    border-color: black;
-    border-style: solid;
-    margin-top: 6rem;
-    width: 30%;
-    justify-content: center;
-    text-align: center;
-    position:absolute;
+    background-color: #f0f2f5;
     display: flex;
-    flex-wrap: wrap;
-    top: 40%;
-    left: 50%;
-    margin-right: -50%;
-    transform: translate(-50%, -50%)
-}
-.button{
-    margin-top: 4%;
-}
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .loginWrapper {
+    width: 70%;
+    height: 70%;
+    display: flex;
+  }
+  
+  .loginLeft,
+  .loginRight {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  
+  .loginLogo {
+    font-size: 50px;
+    font-weight: 800;
+    color: #1775ee;
+    margin-bottom: 10px;
+  }
+  
+  .loginDesc {
+    font-size: 24px;
+  }
+  
+  .loginBox{
+      height: 300px;
+      padding: 20px;
+      background-color: white;
+      border-radius: 10px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+  }
+  
+  .loginInput{
+      height: 50px;
+      border-radius: 10px;
+      border: 1px solid gray;
+      font-size: 18px;
+      padding-left: 20px;
+  }
+  
+  .loginInput:focus{
+      outline: none;
+  }
+  
+  .loginButton{
+      height: 50px;
+      border-radius: 10px;
+      border: none;
+      background-color: #1775ee;
+      color: white;
+      font-size: 20px;
+      font-weight: 500;
+      cursor: pointer;
+  }
+  
+  .loginForgot{
+      text-align: center;
+      color: #1775ee;
+  }
+  
+  .loginRegisterButton{
+      width: 60%;
+      align-self: center;
+      height: 50px;
+      border-radius: 10px;
+      border: none;
+      background-color: #42b72a;
+      color: white;
+      font-size: 20px;
+      font-weight: 500;
+      cursor: pointer;
+  }

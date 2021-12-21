@@ -176,7 +176,7 @@ export default function PrimarySearchAppBar() {
             component="div"
             sx={{ display: { xs: 'none', sm: 'block' } }}
           >
-            DD214
+            214
           </Typography>
           <Search>
             <SearchIconWrapper>

@@ -5,6 +5,7 @@ import jwtDecode from 'jwt-decode'
 import SearchBar from './components/SearchBar/SearchBar'
 import LoginPage from './components/Pages/LoginPage/LoginPage'
 import MainFeedPage from "./components/Pages/MainFeedPage/MainFeedPage";
+import Profile from "./components/Pages/Profile/Profile";
 // import PageLayout from "./components/PageLayout/PageLayout";
 
 class App extends Component {
@@ -33,6 +34,7 @@ class App extends Component {
         }catch{
           
         }
+        console.log(this.state)
     }
 render() {
     return (
@@ -48,6 +50,13 @@ render() {
                     }}}/>
             <Route path="/login" component={LoginPage}/>
             <Route path="/mainfeed" component={MainFeedPage}/>
+            <Route path ="/profile" component={Profile}/>
+            {/* <Route path="/profile"exact render={(props)=>{
+                if(!this.state.user){
+                    return<Redirect to='/login'/>}
+                else{
+                        return <Profile {...props}/>
+                    }}}/> */}
             {/* <Route path="/" element={<Login/>}/> */}
             {/* <Route path="/" exact render={(props) => {
                 if(!this.state.user){
