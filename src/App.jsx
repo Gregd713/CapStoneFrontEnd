@@ -6,7 +6,7 @@ import SearchBar from './components/SearchBar/SearchBar'
 import LoginPage from './components/Pages/LoginPage/LoginPage'
 import MainFeedPage from "./components/Pages/MainFeedPage/MainFeedPage";
 import Profile from "./components/Pages/Profile/Profile";
-// import PageLayout from "./components/PageLayout/PageLayout";
+import Register from "./components/Pages/Register/Register"
 
 class App extends Component {
     constructor(props){
@@ -50,7 +50,7 @@ render() {
                     }}}/>
             <Route path="/login" component={LoginPage}/>
             <Route path="/mainfeed" component={MainFeedPage}/>
-            {/* <Route path ="/profile" component={Profile}/> */}
+            <Route path="/register" component={Register}/>
             <Route path="/profile"exact render={(props)=>{
                 if(!this.state.user){
                     return<Redirect to='/login'/>}
