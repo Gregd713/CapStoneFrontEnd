@@ -50,13 +50,13 @@ render() {
                     }}}/>
             <Route path="/login" component={LoginPage}/>
             <Route path="/mainfeed" component={MainFeedPage}/>
-            <Route path ="/profile" component={Profile}/>
-            {/* <Route path="/profile"exact render={(props)=>{
+            {/* <Route path ="/profile" component={Profile}/> */}
+            <Route path="/profile"exact render={(props)=>{
                 if(!this.state.user){
                     return<Redirect to='/login'/>}
                 else{
                         return <Profile {...props}/>
-                    }}}/> */}
+                    }}}/>
             {/* <Route path="/" element={<Login/>}/> */}
             {/* <Route path="/" exact render={(props) => {
                 if(!this.state.user){
