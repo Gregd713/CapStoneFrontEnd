@@ -38,7 +38,7 @@ function HomePage(props){
 
 
             <div className="title-holder">
-            <h1>DD214 Guidance Group</h1>
+            <h1>LIFE 214</h1>
             <h3>Service Member to Civilian Transitional Guidance Group</h3>  
             </div>
 
@@ -54,7 +54,7 @@ function HomePage(props){
 
             <div className='route-buttons'>
             <Button variant="contained" href="/login" >Login</Button>
-            <Button  variant="contained"className="middle-button" href="/signup">Sign-up</Button>
+            <Button  variant="contained"className="middle-button" href="/register">Sign-up</Button>
             <Button variant="contained" href="/about">About</Button>
             </div>
         </div>

@@ -15,7 +15,9 @@ import AccountCircle from '@mui/icons-material/AccountCircle';
 import MailIcon from '@mui/icons-material/Mail';
 import NotificationsIcon from '@mui/icons-material/Notifications';
 import MoreIcon from '@mui/icons-material/MoreVert';
+import Button from '@mui/material/Button';
 import Logout from '../Logout/Logout';
+import "./SearchBar.css"
 
 const Search = styled('div')(({ theme }) => ({
   position: 'relative',
@@ -98,7 +100,7 @@ export default function PrimarySearchAppBar() {
       open={isMenuOpen}
       onClose={handleMenuClose}
     >
-      <MenuItem onClick={handleMenuClose}>Profile</MenuItem>
+      <MenuItem  onClick={handleMenuClose}>Profile</MenuItem>
       <MenuItem onClick={handleMenuClose}>My account</MenuItem>
       <Logout/>
       {/* <MenuItem onClick={localStorage.removeItem("token")} >Logout</MenuItem> */}
@@ -176,8 +178,9 @@ export default function PrimarySearchAppBar() {
             component="div"
             sx={{ display: { xs: 'none', sm: 'block' } }}
           >
-            214
+           
           </Typography>
+          <Button  color="inherit" variant="text"className="home-button" href="/"><h3>LIFE 214</h3></Button>
           <Search>
             <SearchIconWrapper>
               <SearchIcon />
