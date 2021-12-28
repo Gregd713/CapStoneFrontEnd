@@ -1,6 +1,6 @@
 import React, { useState }  from 'react';
 import LeftBar from"../../LeftBar/LeftBar";
-import Feed from "../../Feed/Feed";
+import Feed from "../../UserFeed/UserFeed";
 import RightBar from "../../RightBar/RightBar";
 
 function Profile(props){
