@@ -30,7 +30,7 @@ function Register(props){
         <div className="loginLeft">
           <h3 className="loginLogo">LIFE 214</h3>
           <span className="loginDesc">
-            We got your six.
+            Brotherhood on the outside.
           </span>
         </div>
         <div className="loginRight">

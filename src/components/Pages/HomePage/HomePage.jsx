@@ -46,9 +46,7 @@ function HomePage(props){
             <h4>Site tailored by veterans for veterans.
             </h4>
             <h4>
-            Here we guide and mentor service members making the jump to life outside the 
-            military. We do this by making sure we all have each other's backs into a new frontier by connecting you 
-            with those who have already made the change.
+Group designed for service members for life outside of the military and knowing you are not alone.
             </h4>
             </div>
 

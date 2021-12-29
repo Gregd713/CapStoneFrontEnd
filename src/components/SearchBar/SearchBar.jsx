@@ -17,6 +17,7 @@ import NotificationsIcon from '@mui/icons-material/Notifications';
 import MoreIcon from '@mui/icons-material/MoreVert';
 import Button from '@mui/material/Button';
 import Logout from '../Logout/Logout';
+import ProfileBtn from '../ProfileButton/ProfileButton'
 import "./SearchBar.css"
 
 const Search = styled('div')(({ theme }) => ({
@@ -100,7 +101,7 @@ export default function PrimarySearchAppBar() {
       open={isMenuOpen}
       onClose={handleMenuClose}
     >
-      <MenuItem  onClick={handleMenuClose}>Profile</MenuItem>
+      <ProfileBtn/>
       <MenuItem onClick={handleMenuClose}>My account</MenuItem>
       <Logout/>
       {/* <MenuItem onClick={localStorage.removeItem("token")} >Logout</MenuItem> */}
