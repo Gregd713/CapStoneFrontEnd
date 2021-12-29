@@ -3,25 +3,16 @@ import { MoreVert } from "@material-ui/icons";
 import { useEffect, useState } from "react";
 import axios from 'axios'; 
 export default function Post({ post }) {
-  const [like,setLike] = useState(post.like)
+  const [like,setLike] = useState(post.likes.length)
   const [isLiked,setIsLiked] = useState(false)
   const [feed, setFeed]=useState({});
   const[user,setUser]=useState({});
 
   useEffect(()=>{
-    const fetchUser=async()=>{
-    const res= await axios.get("http://localhost:5000/api/users/current");
-    setUser(res.data)
-    console.log(res.data)
-  };
-  fetchUser();
-  },[]);
-  
-
-  useEffect(()=>{
     const fetchFeed=async()=>{
     const res= await axios.get(`http://localhost:5000/api/users/current/${post.userId}`);
-    setFeed(res.data)
+    setFeed(res.data);
+    console.log(res.data);
   };
   fetchFeed();
   },[]);
