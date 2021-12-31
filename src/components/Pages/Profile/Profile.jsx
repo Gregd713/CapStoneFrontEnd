@@ -43,7 +43,7 @@ function Profile(props){
               </div>
             </div>
             <div className="profileRightBottom">
-              <Feed />
+              <Feed username="jonh" />
               <RightBar profile/>
             </div>
           </div>

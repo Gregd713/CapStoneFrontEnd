@@ -10,6 +10,8 @@ import {
   Event,
   School,
 } from "@material-ui/icons";
+import AddTaskIcon from '@mui/icons-material/AddTask';
+import Button from '@mui/material/Button';
 import { Users } from "../../dummyData";
 import CloseFriends from "../CloseFriends/CloseFriends";
 
@@ -18,41 +20,41 @@ export default function LeftBar() {
     <div className="sidebar">
       <div className="sidebarWrapper">
         <ul className="sidebarList">
-          <li className="sidebarListItem">
+          <li href="/profile"className="sidebarListItem">
             <RssFeed className="sidebarIcon" />
-            <span className="sidebarListItemText">Feed</span>
+            <Button classname="sidebar" variant="text" href="/">feed</Button>
           </li>
           <li className="sidebarListItem">
             <Chat className="sidebarIcon" />
-            <span className="sidebarListItemText">Chats</span>
+            <Button classname="sidebar" variant="text" href="/messages">messages</Button>
           </li>
           <li className="sidebarListItem">
-            <PlayCircleFilledOutlined className="sidebarIcon" />
-            <span className="sidebarListItemText">Videos</span>
+            <AddTaskIcon className="sidebarIcon" />
+            <Button classname="sidebar" variant="text" href="/myplan">my plan</Button>
           </li>
           <li className="sidebarListItem">
             <Group className="sidebarIcon" />
-            <span className="sidebarListItemText">Groups</span>
+            <Button classname="sidebar" variant="text" href="/">Groups</Button>
           </li>
           <li className="sidebarListItem">
             <Bookmark className="sidebarIcon" />
-            <span className="sidebarListItemText">Bookmarks</span>
+            <Button classname="sidebar" variant="text" href="/">Bookmarks</Button>
           </li>
           <li className="sidebarListItem">
             <HelpOutline className="sidebarIcon" />
-            <span className="sidebarListItemText">Questions</span>
+            <Button classname="sidebar" variant="text" href="/">questions</Button>
           </li>
           <li className="sidebarListItem">
             <WorkOutline className="sidebarIcon" />
-            <span className="sidebarListItemText">Jobs</span>
+            <Button classname="sidebar" variant="text" href="/">jobs</Button>
           </li>
           <li className="sidebarListItem">
             <Event className="sidebarIcon" />
-            <span className="sidebarListItemText">Events</span>
+            <Button classname="sidebar" variant="text" href="/">events</Button>
           </li>
           <li className="sidebarListItem">
             <School className="sidebarIcon" />
-            <span className="sidebarListItemText">Courses</span>
+            <Button classname="sidebar" variant="text" href="/">courses</Button>
           </li>
         </ul>
         <button className="sidebarButton">Show More</button>

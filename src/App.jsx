@@ -6,7 +6,9 @@ import SearchBar from './components/SearchBar/SearchBar'
 import LoginPage from './components/Pages/LoginPage/LoginPage'
 import MainFeedPage from "./components/Pages/MainFeedPage/MainFeedPage";
 import Profile from "./components/Pages/Profile/Profile";
-import Register from "./components/Pages/Register/Register"
+import Register from "./components/Pages/Register/Register";
+import Messages from "../src/components/Pages/Messages/Messages";
+import MyPlan from "../src/components/Pages/MyPlan/MyPlan";
 
 class App extends Component {
     constructor(props){
@@ -56,6 +58,18 @@ render() {
                     return<Redirect to='/login'/>}
                 else{
                         return <Profile {...props}/>
+                    }}}/>
+            <Route path="/messages"exact render={(props)=>{
+                if(!this.state.user){
+                    return<Redirect to='/login'/>}
+                else{
+                        return <Messages {...props}/>
+                    }}}/>
+            <Route path="/myplan"exact render={(props)=>{
+                if(!this.state.user){
+                    return<Redirect to='/login'/>}
+                else{
+                        return <MyPlan {...props}/>
                     }}}/>
             {/* <Route path="/" element={<Login/>}/> */}
             {/* <Route path="/" exact render={(props) => {
