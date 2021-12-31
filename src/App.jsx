@@ -9,6 +9,12 @@ import Profile from "./components/Pages/Profile/Profile";
 import Register from "./components/Pages/Register/Register";
 import Messages from "../src/components/Pages/Messages/Messages";
 import MyPlan from "../src/components/Pages/MyPlan/MyPlan";
+import Groups from "../src/components/Pages/Groups/Groups";
+import Bookmarks from "../src/components/Pages/Bookmarks/Bookmarks";
+//import Questions from "../src/Components/Pages/Questions/Questions";
+//import Jobs from "../src/Components/Pages/Jobs/Jobs";
+//import Events from "../src/Components/Pages/Events/Events";
+//import Courses from "../src/Components/Pages/Courses/Courses";
 
 class App extends Component {
     constructor(props){
@@ -70,6 +76,18 @@ render() {
                     return<Redirect to='/login'/>}
                 else{
                         return <MyPlan {...props}/>
+                    }}}/>
+            <Route path="/groups"exact render={(props)=>{
+                if(!this.state.user){
+                    return<Redirect to='/login'/>}
+                else{
+                        return <Groups {...props}/>
+                    }}}/>
+            <Route path="/bookmarks"exact render={(props)=>{
+                if(!this.state.user){
+                    return<Redirect to='/login'/>}
+                else{
+                        return <Bookmarks {...props}/>
                     }}}/>
             {/* <Route path="/" element={<Login/>}/> */}
             {/* <Route path="/" exact render={(props) => {

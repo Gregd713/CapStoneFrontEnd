@@ -34,27 +34,27 @@ export default function LeftBar() {
           </li>
           <li className="sidebarListItem">
             <Group className="sidebarIcon" />
-            <Button classname="sidebar" variant="text" href="/">Groups</Button>
+            <Button classname="sidebar" variant="text" href="/groups">Groups</Button>
           </li>
           <li className="sidebarListItem">
             <Bookmark className="sidebarIcon" />
-            <Button classname="sidebar" variant="text" href="/">Bookmarks</Button>
+            <Button classname="sidebar" variant="text" href="/bookmarks">Bookmarks</Button>
           </li>
           <li className="sidebarListItem">
             <HelpOutline className="sidebarIcon" />
-            <Button classname="sidebar" variant="text" href="/">questions</Button>
+            <Button classname="sidebar" variant="text" href="/questions">questions</Button>
           </li>
           <li className="sidebarListItem">
             <WorkOutline className="sidebarIcon" />
-            <Button classname="sidebar" variant="text" href="/">jobs</Button>
+            <Button classname="sidebar" variant="text" href="/jobs">jobs</Button>
           </li>
           <li className="sidebarListItem">
             <Event className="sidebarIcon" />
-            <Button classname="sidebar" variant="text" href="/">events</Button>
+            <Button classname="sidebar" variant="text" href="/events">events</Button>
           </li>
           <li className="sidebarListItem">
             <School className="sidebarIcon" />
-            <Button classname="sidebar" variant="text" href="/">courses</Button>
+            <Button classname="sidebar" variant="text" href="/courses">courses</Button>
           </li>
         </ul>
         <button className="sidebarButton">Show More</button>
