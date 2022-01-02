@@ -1,14 +1,19 @@
 import "./Share.css";
-import {PermMedia, Label,Room, EmojiEmotions} from "@material-ui/icons"
+import {PermMedia, Label,Room, EmojiEmotions} from "@material-ui/icons";
+import Avatar from '@mui/material/Avatar';
 
 export default function Share() {
   return (
     <div className="share">
       <div className="shareWrapper">
         <div className="shareTop">
-          <img className="shareProfileImg" src="/assets/person/1.jpeg" alt="" />
+        <Avatar
+        alt="Remy Sharp"
+        src="/static/images/avatar/1.jpg"
+        sx={{ width: 56, height: 56 }}
+      />
           <input
-            placeholder="What's in your mind Safak?"
+            placeholder="What's on your mind Greg?"
             className="shareInput"
           />
         </div>

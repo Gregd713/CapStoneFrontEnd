@@ -2,6 +2,11 @@ import "./Post.css";
 import { MoreVert } from "@material-ui/icons";
 import { useEffect, useState } from "react";
 import axios from 'axios'; 
+import ThumbUpIcon from '@mui/icons-material/ThumbUp';
+import ThumbDownIcon from '@mui/icons-material/ThumbDown';
+import Avatar from '@mui/material/Avatar';
+import Stack from '@mui/material/Stack';
+
 export default function Post({ post }) {
   const [like,setLike] = useState(post.likes.length)
   const [isLiked,setIsLiked] = useState(false)
@@ -26,11 +31,11 @@ export default function Post({ post }) {
       <div className="postWrapper">
         <div className="postTop">
           <div className="postTopLeft">
-            <img
-              className="postProfileImg"
-              src=""
-              alt=""
-            />
+          <Avatar
+        alt="Remy Sharp"
+        src="/static/images/avatar/1.jpg"
+        sx={{ width: 56, height: 56 }}
+      />
             <span className="postUsername">
               {user.name}
             </span>
@@ -46,9 +51,11 @@ export default function Post({ post }) {
         </div>
         <div className="postBottom">
           <div className="postBottomLeft">
-            <img className="likeIcon" src="assets/like.png" onClick={likeHandler} alt="" />
-            <img className="likeIcon" src="assets/heart.png" onClick={likeHandler} alt="" />
+            <Stack direction="row" spacing={2}>
+            <ThumbUpIcon onClick={likeHandler}/>
+            <ThumbDownIcon onClick={likeHandler}/>
             <span className="postLikeCounter">{like} people like it</span>
+            </Stack>
           </div>
           <div className="postBottomRight">
             <span className="postCommentText">{post.comment} comments</span>
