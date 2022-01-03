@@ -17,7 +17,6 @@ function Bookmarks(props){
             <h1>Bookmarks go here.</h1>
             </div>
             </div>
-            <RightBar profile/>
           </div>
         </div>
       </div>

@@ -42,7 +42,7 @@ export default function Share() {
                 </div>
             </div>
             <button className="shareButton">Share</button>
-            <ImageUpload/>
+
         </div>
       </div>
     </div>

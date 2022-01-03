@@ -2,7 +2,8 @@ import React, { useState }  from 'react';
 import LeftBar from"../../LeftBar/LeftBar";
 import Feed from "../../UserFeed/UserFeed";
 import RightBar from "../../RightBar/RightBar";
-
+import profile1 from "../Images/profile1.jpg";
+import lightyear from "../Images/lightyear.jpg"
 function Profile(props){
     return(
         <>
@@ -13,31 +14,35 @@ function Profile(props){
               <div className="profileCover">
                 <img
                   className="profileCoverImg"
-                  src="assets/post/3.jpeg"
+                  src={lightyear}
                   alt=""
                 />
                 <img
                   className="profileUserImg"
-                  src="assets/person/7.jpeg"
+                  src={profile1}
                   alt=""
                 />
               </div>
               <div className="profileInfo">
-                  <h4 className="profileInfoName">Safak Kocaoglu</h4>
-                  <span className="profileInfoDesc">Tag line</span>
+                  <h4 className="profileInfoName">Greg Delgado</h4>
+                  <span className="profileInfoDesc">Veteran</span>
                   <h4 className="rightbarTitle">User information</h4>
         <div className="rightbarInfo">
           <div className="rightbarInfoItem">
             <span className="rightbarInfoKey">City:</span>
-            <span className="rightbarInfoValue">New York</span>
+            <span className="rightbarInfoValue">Houston</span>
           </div>
           <div className="rightbarInfoItem">
-            <span className="rightbarInfoKey">From:</span>
-            <span className="rightbarInfoValue">Madrid</span>
+            <span className="rightbarInfoKey">Branch:</span>
+            <span className="rightbarInfoValue">Army</span>
           </div>
           <div className="rightbarInfoItem">
-            <span className="rightbarInfoKey">Relationship:</span>
-            <span className="rightbarInfoValue">Single</span>
+            <span className="rightbarInfoKey">HRIS:</span>
+            <span className="rightbarInfoValue">SGT</span>
+          </div>
+          <div className="rightbarInfoItem">
+            <span className="rightbarInfoKey">LS:</span>
+            <span className="rightbarInfoValue">November 2021</span>
           </div>
         </div> 
               </div>

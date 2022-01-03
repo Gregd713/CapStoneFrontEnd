@@ -11,10 +11,11 @@ import Messages from "../src/components/Pages/Messages/Messages";
 import MyPlan from "../src/components/Pages/MyPlan/MyPlan";
 import Groups from "../src/components/Pages/Groups/Groups";
 import Bookmarks from "../src/components/Pages/Bookmarks/Bookmarks";
-//import Questions from "../src/Components/Pages/Questions/Questions";
-//import Jobs from "../src/Components/Pages/Jobs/Jobs";
-//import Events from "../src/Components/Pages/Events/Events";
-//import Courses from "../src/Components/Pages/Courses/Courses";
+import Questions from "../src/components/Pages/Questions/Questions";
+import Jobs from "../src/components/Pages/Jobs/Job";
+import Events from "../src/components/Pages/Events/Events";
+import Courses from "../src/components/Pages/Courses/Courses";
+import CreateGroup from "./components/Pages/CreateAGroup/CreateAGroup";
 
 class App extends Component {
     constructor(props){
@@ -91,6 +92,37 @@ render() {
                 else{
                         return <Bookmarks {...props}/>
                     }}}/>
+            <Route path="/questions"exact render={(props)=>{
+                if(!this.state.user){
+                    return<Redirect to='/login'/>}
+                else{
+                        return <Questions {...props}/>
+                    }}}/>
+            <Route path="/jobs"exact render={(props)=>{
+                if(!this.state.user){
+                    return<Redirect to='/login'/>}
+                else{
+                        return <Jobs {...props}/>
+                    }}}/>
+            <Route path="/events"exact render={(props)=>{
+                if(!this.state.user){
+                    return<Redirect to='/login'/>}
+                else{
+                        return <Events {...props}/>
+                    }}}/>
+            <Route path="/courses"exact render={(props)=>{
+                if(!this.state.user){
+                    return<Redirect to='/login'/>}
+                else{
+                        return <Courses {...props}/>
+                    }}}/>
+            <Route path="/create-group"exact render={(props)=>{
+                if(!this.state.user){
+                    return<Redirect to='/login'/>}
+                else{
+                        return <CreateGroup {...props}/>
+                    }}}/>
+
             {/* <Route path="/" element={<Login/>}/> */}
             {/* <Route path="/" exact render={(props) => {
                 if(!this.state.user){

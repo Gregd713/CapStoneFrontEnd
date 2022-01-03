@@ -53,7 +53,6 @@ Group designed for service members for life outside of the military and knowing 
             <div className='route-buttons'>
             <Button variant="contained" href="/login" >Login</Button>
             <Button  variant="contained"className="middle-button" href="/register">Sign-up</Button>
-            <Button variant="contained" href="/about">About</Button>
             </div>
         </div>
     )

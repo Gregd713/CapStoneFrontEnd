@@ -6,6 +6,7 @@ import ThumbUpIcon from '@mui/icons-material/ThumbUp';
 import ThumbDownIcon from '@mui/icons-material/ThumbDown';
 import Avatar from '@mui/material/Avatar';
 import Stack from '@mui/material/Stack';
+
 // import ImageUpload from "../ImageUpload/ImageUpload";
 
 export default function Post({ post }) {
@@ -34,7 +35,7 @@ export default function Post({ post }) {
           <div className="postTopLeft">
           <Avatar
         alt="Remy Sharp"
-        src="/static/images/avatar/1.jpg"
+        src={"/static/images/avatar/1.jpg"}
         sx={{ width: 56, height: 56 }}
       />
             <span className="postUsername">

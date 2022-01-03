@@ -16,10 +16,10 @@ function Messages(props){
             <div className="feed">
             <div className="feedWrapper">
             <ChatEngine
-			projectID='53beceec-6ea9-45ab-b2f4-052f74f4be6a'
-			userName='Greg'
-			userSecret='Greg'
-		/>
+              projectID='53beceec-6ea9-45ab-b2f4-052f74f4be6a'
+              userName='Greg'
+              userSecret='Greg'
+            />
             </div>
             </div>
           </div>
