@@ -1,8 +1,12 @@
+import React, { useState } from 'react';
 import "./Share.css";
 import {PermMedia, Label,Room, EmojiEmotions} from "@material-ui/icons";
 import Avatar from '@mui/material/Avatar';
+import ImageUpload from "../ImageUpload/ImageUpload";
 
 export default function Share() {
+// const [user,setUser]=useState({});
+// const [file,setFile]=useState({});
   return (
     <div className="share">
       <div className="shareWrapper">
@@ -38,6 +42,7 @@ export default function Share() {
                 </div>
             </div>
             <button className="shareButton">Share</button>
+            <ImageUpload/>
         </div>
       </div>
     </div>

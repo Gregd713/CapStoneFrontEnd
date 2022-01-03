@@ -37,8 +37,7 @@ function Register(props){
           <form className="loginBox" onSubmit={handleSubmit}>
             <input placeholder="Name" value={username} onChange={(event) => setUsername(event.target.value)} type='text'/>
             <input placeholder="Email"value={email} onChange={(event) => setEmail(event.target.value)} type='text' />
-            <input placeholder="Password" value={password} onChange={(event) => setPassword(event.target.value)} type='text' 
-            />
+            <input placeholder="Password" value={password} onChange={(event) => setPassword(event.target.value)} type='text' />
             <button className="loginButton" type="submit">
               Sign Up
             </button>

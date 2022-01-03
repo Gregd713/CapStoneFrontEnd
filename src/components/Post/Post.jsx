@@ -6,6 +6,7 @@ import ThumbUpIcon from '@mui/icons-material/ThumbUp';
 import ThumbDownIcon from '@mui/icons-material/ThumbDown';
 import Avatar from '@mui/material/Avatar';
 import Stack from '@mui/material/Stack';
+// import ImageUpload from "../ImageUpload/ImageUpload";
 
 export default function Post({ post }) {
   const [like,setLike] = useState(post.likes.length)

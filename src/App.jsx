@@ -19,6 +19,8 @@ import Bookmarks from "../src/components/Pages/Bookmarks/Bookmarks";
 class App extends Component {
     constructor(props){
         super(props);
+        // const [user,setUser]=useState();
+        // const [file,setFile]=useState();
         const jwt=localStorage.getItem('token');
         try{
           const decodedUser= jwtDecode(jwt);
