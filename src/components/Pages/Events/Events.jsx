@@ -6,7 +6,7 @@ import LeftBar from"../../LeftBar/LeftBar";
 import AddCircleIcon from '@mui/icons-material/AddCircle';
 import './Events.css'
 
-function MyPlan(props){
+function Events(props){
     return(
 <div className="profile">
         <LeftBar />
@@ -23,7 +23,7 @@ function MyPlan(props){
         sx={{ width: 56, height: 56 }}
       />
           <input
-            placeholder="Would you like to join or create an event?"
+            placeholder="Would you like to join or create a Event?"
             className="shareInput"
           />
         </div>
@@ -31,10 +31,10 @@ function MyPlan(props){
         <div className="shareBottom">
             <div className="shareOptions">
                 <div className="shareOption">
-                <button className="shareButton">Join Event</button>
+                <Button variant="contained" href="/create-event" >Join Event</Button>
                 </div>
                 <div className="shareOption">
-                <button className="shareButton">+Create Event</button>
+                <Button variant="contained" href="/create-event" >+ Create Event</Button>
 
                 </div>
             </div>
@@ -51,4 +51,4 @@ function MyPlan(props){
       </div>
     )
 }
-export default MyPlan;
+export default Events;
