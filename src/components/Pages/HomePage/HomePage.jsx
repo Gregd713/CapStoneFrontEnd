@@ -1,4 +1,4 @@
-import React from 'react';
+import * as React from 'react';
 import Button from '@mui/material/Button';
 import Army from '../Images/Army.png';
 import AirForce from '../Images/sealAirForce.png';
@@ -8,7 +8,7 @@ import Marines from '../Images/Marines.png';
 import CoastGuard from '../Images/CoastGuard.png'
 import './HomePage.css'
 
-function HomePage(props){
+const HomePage=()=>{
     return(
         
         <div className="background-container">
