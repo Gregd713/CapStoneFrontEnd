@@ -16,6 +16,7 @@ import Jobs from "../src/components/Pages/Jobs/Job";
 import Events from "../src/components/Pages/Events/Events";
 import Courses from "../src/components/Pages/Courses/Courses";
 import CreateGroup from "./components/Pages/CreateAGroup/CreateAGroup";
+import CreateEvent from "./components/Pages/CreateEvent/CreateEvent";
 
 class App extends Component {
     constructor(props){
@@ -121,6 +122,12 @@ render() {
                     return<Redirect to='/login'/>}
                 else{
                         return <CreateGroup {...props}/>
+                    }}}/>
+            <Route path="/create-event"exact render={(props)=>{
+                if(!this.state.user){
+                    return<Redirect to='/login'/>}
+                else{
+                        return <CreateEvent {...props}/>
                     }}}/>
 
             {/* <Route path="/" element={<Login/>}/> */}

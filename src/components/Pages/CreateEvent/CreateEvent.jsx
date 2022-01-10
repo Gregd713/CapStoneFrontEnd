@@ -3,10 +3,10 @@ import React, { useState } from 'react';
 import Button from '@mui/material/Button';
 import Avatar from '@mui/material/Avatar';
 import LeftBar from"../../LeftBar/LeftBar";
-import "./CreateAGroup.css"
+import "./CreateEvent.css"
 import axios from 'axios';
 
-function CreateGroup(props){
+function CreateEvent(props){
 
   const [username,setUsername] = useState('');
   const [email,setEmail] = useState('');
@@ -24,10 +24,10 @@ function CreateGroup(props){
             time: time,
             place:place,
             date:date,
-            desc: description,
+            desc: desc,
             isAdmin: false
     };
-    let response = await axios.post(`http://localhost:5000/api/events/register-event`, postUser);
+    let response = await axios.post(`http://localhost:5000/api/event/register-event`, postUser);
     if(response.status == 200){
       window.location = '/events'
     }
@@ -58,10 +58,10 @@ function CreateGroup(props){
         <div className="shareBottom">
             <div className="shareOptions">
                 <div className="shareOption">
-                <Button variant="contained" href="/create-group" >Join a Group</Button>
+                <Button variant="contained" href="/create-group" >Join Event</Button>
                 </div>
                 <div className="shareOption">
-                <Button variant="contained" href="/create-group" >+ Create a Group</Button>
+                <Button variant="contained" href="/create-group" >+ Create Event</Button>
 
                 </div>
             </div>
@@ -72,11 +72,11 @@ function CreateGroup(props){
       <div className="loginRight">
           <form className="loginBox" onSubmit={handleSubmit}>
             <input placeholder="Event Name" value={username} onChange={(event) => setUsername(event.target.value)} type='text'/>
-            <input placeholder="Password" value={password} onChange={(event) => setPassword(event.target.value)} type='text' />
+            <input placeholder="Password to event" value={password} onChange={(event) => setPassword(event.target.value)} type='text'/>
             <input placeholder="Time" value={time} onChange={(event) => setTime(event.target.value)} type='text'/>
             <input placeholder="Date" value={date} onChange={(event) => setDate(event.target.value)} type='text'/>
             <input placeholder="Place" value={place} onChange={(event) => setPlace(event.target.value)} type='text'/>
-            <input placeholder="Description" value={description} onChange={(event) => setDesc(event.target.value)} type='text'/>
+            <input placeholder="Description" value={desc} onChange={(event) => setDesc(event.target.value)} type='text'/>
 
             <button className="loginButton" type="submit">
               Create Event
@@ -107,4 +107,4 @@ function CreateGroup(props){
     )
 }
 
-export default CreateGroup;
+export default CreateEvent;
