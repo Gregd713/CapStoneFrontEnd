@@ -10,6 +10,9 @@ function CreateGroup(props){
   const [username,setUsername] = useState('');
   const [email,setEmail] = useState('');
   const[password, setPassword] = useState('');
+  const[desc,setDesc]=useState('');
+  const[city,setCity]=useState('');
+  const[state,setState]=useState('');
 
 
   async function handleSubmit(e){
@@ -17,6 +20,9 @@ function CreateGroup(props){
     const postUser={
             name: username,
             password: password,
+            desc:desc,
+            city:city,
+            state:state,
             isAdmin: false
     };
     let response = await axios.post(`http://localhost:5000/api/groups/register-group`, postUser);
@@ -65,6 +71,12 @@ function CreateGroup(props){
           <form className="loginBox" onSubmit={handleSubmit}>
             <input placeholder="Group Name" value={username} onChange={(event) => setUsername(event.target.value)} type='text'/>
             <input placeholder="Password" value={password} onChange={(event) => setPassword(event.target.value)} type='text' />
+            <input placeholder="City" value={city} onChange={(event) => setCity(event.target.value)} type='text' />
+            <input placeholder="State" value={state} onChange={(event) => setState(event.target.value)} type='text' />
+            <input placeholder="Description of group" value={desc} onChange={(event) => setDesc(event.target.value)} type='text' />
+
+
+
             <button className="loginButton" type="submit">
               Create Group
             </button>
