@@ -42,7 +42,7 @@ function LoginForm(props){
             <input placeholder="Email" className="loginInput" value={email} onChange={(event) => getEmail(event.target.value)} type='text' />
     
             
-            <input placeholder="Password" className="loginInput"value={password} onChange={(event) => getPassword(event.target.value)} type='text' />          
+            <input classname="input-box" placeholder="Password" className="loginInput"value={password} onChange={(event) => getPassword(event.target.value)} type='password' />          
             <button className="loginButton"href="/mainfeed"type='submit'>Log in</button>
           </form>
                 {/* <input placeholder="Email" className="loginInput" value={email} onChange={(event) => getEmail(event.target.value)} type='text'/>
