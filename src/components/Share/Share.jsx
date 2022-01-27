@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import "./Share.css";
 import {PermMedia, Label,Room, EmojiEmotions} from "@material-ui/icons";
 import Avatar from '@mui/material/Avatar';
+import profile1 from "../Images/profile1.jpg";
 import ImageUpload from "../ImageUpload/ImageUpload";
 
 export default function Share() {
@@ -13,7 +14,7 @@ export default function Share() {
         <div className="shareTop">
         <Avatar
         alt="Remy Sharp"
-        src="/static/images/avatar/1.jpg"
+        src={profile1}
         sx={{ width: 56, height: 56 }}
       />
           <input

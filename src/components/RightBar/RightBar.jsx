@@ -2,6 +2,12 @@ import "./RightBar.css";
 import Online from "../Online/Online";
 import { Users } from "../../dummyData";
 import { Avatar } from "@mui/material";
+import pic1 from "../Images/pic1.jpg";
+import pic2 from "../Images/pic2.jpg";
+import pic3 from "../Images/pic3.jpg";
+import pic4 from "../Images/pic4.jpg";
+import pic5 from "../Images/pic5.jpg";
+import pic6 from "../Images/pic6.jpg";
 
 export default function Rightbar({ profile }) {
   const HomeRightbar = () => {
@@ -31,34 +37,34 @@ export default function Rightbar({ profile }) {
         <h4 className="rightbarTitle">User friends</h4>
         <div className="rightbarFollowings">
           <div className="rightbarFollowing">
-          <Avatar alt="Remy Sharp" src="/static/images/avatar/1.jpg" />
+          <Avatar alt="Remy Sharp" src={pic1} />
+
+            <span className="rightbarFollowingName">Julia Doe</span>
+          </div>
+          <div className="rightbarFollowing">
+          <Avatar alt="Remy Sharp" src={pic2}/>
 
             <span className="rightbarFollowingName">John Doe</span>
           </div>
           <div className="rightbarFollowing">
-          <Avatar alt="Remy Sharp" src="/static/images/avatar/1.jpg" />
+          <Avatar alt="Remy Sharp" src={pic3} />
 
-            <span className="rightbarFollowingName">Jane Doe</span>
+            <span className="rightbarFollowingName">Jill Bob</span>
           </div>
           <div className="rightbarFollowing">
-          <Avatar alt="Remy Sharp" src="/static/images/avatar/1.jpg" />
-
-            <span className="rightbarFollowingName">Billy Bob</span>
-          </div>
-          <div className="rightbarFollowing">
-          <Avatar alt="Remy Sharp" src="/static/images/avatar/1.jpg" />
+          <Avatar alt="Remy Sharp" src={pic4} />
 
             <span className="rightbarFollowingName">John Carter</span>
           </div>
           <div className="rightbarFollowing">
-          <Avatar alt="Remy Sharp" src="/static/images/avatar/1.jpg" />
+          <Avatar alt="Remy Sharp" src={pic5} />
 
-            <span className="rightbarFollowingName">Jane Carter</span>
+            <span className="rightbarFollowingName">Jones Carter</span>
           </div>
           <div className="rightbarFollowing">
-          <Avatar alt="Remy Sharp" src="/static/images/avatar/1.jpg" />
+          <Avatar alt="Remy Sharp" src={pic6} />
 
-            <span className="rightbarFollowingName">Juan Carter</span>
+            <span className="rightbarFollowingName">Judith Carter</span>
           </div>
         </div>
       </>
